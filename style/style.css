@@ -2,6 +2,22 @@ body {
   margin: 0;
 }
 
+.navigation {
+  height: 1000px;
+  position: relative;
+}
+
+.navigation__content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+  text-align: center;
+  color: White;
+  font-family: 'Raleway', sans-serif;
+}
+
 .navigation__links {
   list-style-type: none;
   display: -webkit-box;
@@ -14,7 +30,7 @@ body {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   color: White !important;
-  font-size: 13px !important;
+  font-size: 17px !important;
   letter-spacing: .2em;
 }
 
@@ -23,5 +39,43 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 20px;
+  text-shadow: black 2px 5px 20px;
+}
+
+.navigation__headline {
+  font-size: 48px;
+}
+
+@media screen and (min-width: 480px) {
+  .navigation__headline {
+    font-size: 64px;
+  }
+}
+
+.navigation__info {
+  margin-top: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navigation__button {
+  color: White !important;
+  font-family: 'Raleway', sans-serif;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 30px;
+  width: 200px;
+}
+
+.menu-item {
+  margin-right: 40px;
+}
+
+.menu-item:last-child {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

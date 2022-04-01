@@ -7,7 +7,7 @@
 </div>
 
 -->
-<nav class="navigation navbar navbar-expand-lg d-block" style="background-image:url(<?php the_field('nav-image'); ?>); ">
+<nav class="navbar-dark navigation navbar navbar-expand-lg d-block" style="background-image:url(<?php the_field('nav-image'); ?>); ">
   <div class="container-fluid">
     <a class="navbar-brand navigation__logo" href="#"><?php the_field("text"); ?></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,6 +22,47 @@
     );
     wp_nav_menu( $args );
     ?>
+    <div class="navigation__content">
+      <?php 
+          $headline = get_field("headline");
+          $text = get_field("info");
+      ?>
+      <h1 class="navigation__headline"><?php echo $headline ?></h1>
+      <p class="navigation__info"><?php echo $text ?></p>
 
+      <?php 
+      
+          if( have_rows('buttons') ):
+            ?>
+            <div class="d-flex flex-column align-items-center">
+              <?php
+            // Loop through rows.
+            while( have_rows('buttons') ) : the_row();
+        
+                // Load sub field value.
+                $text = get_sub_field('button_text');
+                $link = get_sub_field('link');
+
+                ?>
+  
+                  <?php if($link) { ?>
+                    <a class="navigation__button" href="<?php echo $link ?>" target="_blank"><?php echo $text ?></a>
+                  <?php } ?>
+                <?php
+                // Do something...
+        
+            // End loop.
+            endwhile;
+            ?>
+            </div>
+            <?php
+        
+        // No value.
+        else :
+            // Do something...
+        endif;
+      
+      ?>
+    </div>
   </div>
 </nav>

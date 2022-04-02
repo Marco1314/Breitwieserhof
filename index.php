@@ -23,10 +23,19 @@ if( have_rows('content') ):
             // Do something...
 
         // Case: Download layout.
-        elseif( get_row_layout() == 'download' ): 
-            $file = get_sub_field('file');
+        endif;
+
+
+        if( get_row_layout() == 'book' ):
+            $titel = get_sub_field('titel');
+            $headline = get_sub_field("headline");
+
+            get_template_part("content/elements/book/book");
+            book($titel, $headline);
+
             // Do something...
 
+        // Case: Download layout.
         endif;
 
     // End loop.

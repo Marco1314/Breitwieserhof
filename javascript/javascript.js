@@ -34,4 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     })
+    $('.magazine').turn({ gradients: true, acceleration: true });
+
 })

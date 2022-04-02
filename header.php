@@ -11,5 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/javascript/javascript.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/node_modules/jquery/dist/jquery.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/javascript/turn.min.js"></script>
     <?php wp_head(); ?>
 </head>

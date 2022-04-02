@@ -1,0 +1,20 @@
+.magazine {
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.magazine__headline {
+  font-size: 48px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (min-width: 480px) {
+  .magazine__headline {
+    font-size: 56px;
+  }
+}
+/*# sourceMappingURL=book.css.map */

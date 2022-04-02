@@ -3,3 +3,34 @@ body {
 }
 
 @import "../content/standards/navigation/navigation";
+@import "../content/elements/textimage/textimage";
+
+
+.faderight {
+    animation-name:faderight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.fadeleft {
+    animation-name:fadeleft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes faderight {
+    0% {
+        right:-200%;
+    }
+    100% {
+        right:0%;
+    }
+}
+
+@keyframes fadeleft {
+    0% {
+        left:-200%;
+    }
+    100% {
+        left:0%;
+    }
+}

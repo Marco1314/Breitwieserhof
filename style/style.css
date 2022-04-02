@@ -78,4 +78,100 @@ body {
 .menu-item:last-child {
   margin: 0;
 }
+
+.textimage {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  overflow: hidden;
+}
+
+.textimage__image {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  right: -200%;
+}
+
+.textimage__text {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+  left: -200%;
+}
+
+@media screen and (min-width: 992px) {
+  .textimage__text {
+    margin: 0;
+  }
+}
+
+.textimage__headline {
+  font-size: 48px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 50px;
+  position: relative;
+  left: -200%;
+}
+
+@media screen and (min-width: 480px) {
+  .textimage__headline {
+    font-size: 56px;
+  }
+}
+
+.faderight {
+  -webkit-animation-name: faderight;
+          animation-name: faderight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.fadeleft {
+  -webkit-animation-name: fadeleft;
+          animation-name: fadeleft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes faderight {
+  0% {
+    right: -200%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+@keyframes faderight {
+  0% {
+    right: -200%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+@-webkit-keyframes fadeleft {
+  0% {
+    left: -200%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes fadeleft {
+  0% {
+    left: -200%;
+  }
+  100% {
+    left: 0%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

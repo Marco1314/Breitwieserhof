@@ -29,9 +29,10 @@ if( have_rows('content') ):
         if( get_row_layout() == 'book' ):
             $titel = get_sub_field('titel');
             $headline = get_sub_field("headline");
+            $download = get_sub_field("speisekarte");
 
             get_template_part("content/elements/book/book");
-            book($titel, $headline);
+            book($titel, $headline, $download);
 
             // Do something...
 
@@ -45,6 +46,7 @@ if( have_rows('content') ):
 else :
     // Do something...
 endif;
+
 ?>
 <?php get_footer(); ?>
 </body>

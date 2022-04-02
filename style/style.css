@@ -127,6 +127,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 992px) {
+  .magazine {
+    width: 1000px;
+  }
+}
+
 .magazine__headline {
   font-size: 48px;
   margin-top: 150px;
@@ -139,6 +145,32 @@ body {
   .magazine__headline {
     font-size: 56px;
   }
+}
+
+.magazine__image {
+  border-radius: 10000px;
+  width: 250px;
+}
+
+.magazine__food {
+  font-weight: 900;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 50px;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.magazine__download {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: underline;
+  color: black;
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.magazine__download:hover {
+  color: black;
 }
 
 .faderight {

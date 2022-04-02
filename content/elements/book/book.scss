@@ -3,6 +3,10 @@
     width:500px;
     margin:0 auto;
 
+    @media screen and (min-width:992px) {
+        width:1000px;
+    }
+
     &__headline {
         font-size: 48px;
         margin-top:150px;
@@ -13,6 +17,30 @@
 
         @media screen and (min-width: 480px) {
             font-size: 56px;
+        }
+    }
+
+    &__image {
+        border-radius: 10000px;
+        width:250px;
+    }
+    &__food {
+        font-weight: 900;
+        font-family: 'Raleway', sans-serif;
+        margin-top:50px;
+        text-decoration: underline;
+        font-size: 20px;
+    }
+    &__download {
+        font-family: 'Raleway', sans-serif;
+        text-decoration: underline; 
+        color:black;
+        display:block;
+        text-align: center;
+        margin-top:50px;
+
+        &:hover {
+            color:black;
         }
     }
 }

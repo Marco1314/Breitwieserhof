@@ -21,7 +21,7 @@
                         <img src="<?php echo $image ?>" class="magazine__image"/>
                     <?php } ?>
                     <p class="magazine__food"><?php echo $food ?></p>
-                    <p><?php echo $text ?></p>
+                    <p class="magazine__info"><?php echo $text ?></p>
                  </div>
             <?php
         // End loop.

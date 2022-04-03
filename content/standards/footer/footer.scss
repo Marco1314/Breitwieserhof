@@ -1,0 +1,15 @@
+.footer {
+    width:100%;
+    background-color: #222222;
+    padding-bottom:150px;
+    padding-top:150px;
+    color:White;
+
+    a {
+        color:White;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

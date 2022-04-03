@@ -1,0 +1,16 @@
+.footer {
+  width: 100%;
+  background-color: #222222;
+  padding-bottom: 150px;
+  padding-top: 150px;
+  color: White;
+}
+
+.footer a {
+  color: White;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+/*# sourceMappingURL=footer.css.map */

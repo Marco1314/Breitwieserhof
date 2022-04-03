@@ -50,6 +50,16 @@ if( have_rows('content') ):
         // Case: Download layout.
         endif;
 
+
+        if( get_row_layout() == 'map' ):
+            get_template_part("content/elements/map/map");
+            map();
+
+            // Do something...
+
+        // Case: Download layout.
+        endif;
+
     // End loop.
     endwhile;
 

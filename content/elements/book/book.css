@@ -6,6 +6,10 @@
   overflow: hidden;
 }
 
+.magazine .hard {
+  border: 1px solid black;
+}
+
 @media screen and (min-width: 992px) {
   .magazine {
     width: 1000px;
@@ -62,5 +66,9 @@
 
 .magazine__download:hover {
   color: black;
+}
+
+.magazine__info {
+  font-size: 12px;
 }
 /*# sourceMappingURL=book.css.map */

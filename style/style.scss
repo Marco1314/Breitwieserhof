@@ -5,6 +5,7 @@ body {
 @import "../content/standards/navigation/navigation";
 @import "../content/elements/textimage/textimage";
 @import "../content/elements/book/book";
+@import "../content/elements/contact/contact-form";
 
 
 .faderight {
@@ -34,4 +35,8 @@ body {
     100% {
         left:0%;
     }
+}
+.d-block-animation {
+    transition: all 1s;
+    opacity: 1;
 }

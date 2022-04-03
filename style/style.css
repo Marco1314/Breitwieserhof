@@ -24,6 +24,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 992px) {
+  .navigation__links {
+    margin: 0;
+  }
 }
 
 .navigation__link {
@@ -72,11 +79,17 @@ body {
 }
 
 .menu-item {
-  margin-right: 40px;
+  text-align: center;
 }
 
-.menu-item:last-child {
-  margin: 0;
+@media screen and (min-width: 992px) {
+  .menu-item {
+    margin-right: 40px;
+    text-align: left;
+  }
+  .menu-item:last-child {
+    margin: 0;
+  }
 }
 
 .textimage {
@@ -122,9 +135,11 @@ body {
 }
 
 .magazine {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 250px;
   margin: 0 auto;
+  opacity: 0;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 992px) {
@@ -149,7 +164,13 @@ body {
 
 .magazine__image {
   border-radius: 10000px;
-  width: 250px;
+  width: 100px;
+}
+
+@media screen and (min-width: 992px) {
+  .magazine__image {
+    width: 250px;
+  }
 }
 
 .magazine__food {
@@ -157,7 +178,13 @@ body {
   font-family: 'Raleway', sans-serif;
   margin-top: 50px;
   text-decoration: underline;
-  font-size: 20px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 992px) {
+  .magazine__food {
+    font-size: 20px;
+  }
 }
 
 .magazine__download {
@@ -171,6 +198,45 @@ body {
 
 .magazine__download:hover {
   color: black;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 150px;
+  border-top: 2px solid black;
+  margin-top: 150px;
+}
+
+.contact label {
+  margin-top: 25px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact textarea {
+  margin-top: 50px;
+}
+
+.contact__headline {
+  font-size: 48px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (min-width: 480px) {
+  .contact__headline {
+    font-size: 56px;
+  }
+}
+
+.contact input {
+  padding: 10px;
 }
 
 .faderight {
@@ -225,5 +291,11 @@ body {
   100% {
     left: 0%;
   }
+}
+
+.d-block-animation {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 150px;
+  border-top: 2px solid black;
+  margin-top: 150px;
+}
+
+.contact label {
+  margin-top: 25px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact textarea {
+  margin-top: 50px;
+}
+
+.contact__headline {
+  font-size: 48px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (min-width: 480px) {
+  .contact__headline {
+    font-size: 56px;
+  }
+}
+
+.contact input {
+  padding: 10px;
+}
+/*# sourceMappingURL=contact-form.css.map */

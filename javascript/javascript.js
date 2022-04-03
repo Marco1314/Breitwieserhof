@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let textimageImage = document.getElementsByClassName("textimage__image");
     let textimageText = document.getElementsByClassName("textimage__text");
     let textimageheadline = document.getElementsByClassName("textimage__headline");
+    let magazine = document.getElementsByClassName("magazine");
 
     document.addEventListener("scroll", function () {
         for (let value of textimageImage) {
@@ -33,7 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 value.classList.add("fadeleft");
             }
         }
+        for (let value of magazine) {
+            if (window.scrollY >= value.offsetTop - 600) {
+                value.classList.add("d-block-animation")
+            }
+        }
     })
     $('.magazine').turn({ gradients: true, acceleration: true });
+
+
 
 })

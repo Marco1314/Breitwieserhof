@@ -39,6 +39,17 @@ if( have_rows('content') ):
         // Case: Download layout.
         endif;
 
+
+        if( get_row_layout() == 'kontakt' ):
+            $headline = get_sub_field("headline");
+            get_template_part("content/elements/contact/contact-form");
+            contact($headline);
+
+            // Do something...
+
+        // Case: Download layout.
+        endif;
+
     // End loop.
     endwhile;
 

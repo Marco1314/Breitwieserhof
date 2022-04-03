@@ -1,7 +1,9 @@
 .magazine {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 250px;
   margin: 0 auto;
+  opacity: 0;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 992px) {
@@ -26,7 +28,13 @@
 
 .magazine__image {
   border-radius: 10000px;
-  width: 250px;
+  width: 100px;
+}
+
+@media screen and (min-width: 992px) {
+  .magazine__image {
+    width: 250px;
+  }
 }
 
 .magazine__food {
@@ -34,7 +42,13 @@
   font-family: 'Raleway', sans-serif;
   margin-top: 50px;
   text-decoration: underline;
-  font-size: 20px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 992px) {
+  .magazine__food {
+    font-size: 20px;
+  }
 }
 
 .magazine__download {

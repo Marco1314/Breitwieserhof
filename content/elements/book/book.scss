@@ -60,4 +60,13 @@
     &__info {
         font-size:12px;
     }
+    &__heading {
+        color:white;
+        font-family: 'Raleway', sans-serif;
+        transform: rotate(45deg);
+
+        @media screen and (min-width:992px) {
+            font-size: 30px;
+        }
+    }
 }

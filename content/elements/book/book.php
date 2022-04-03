@@ -2,7 +2,7 @@
 <?php function book($heading, $headline, $download) { ?> 
 <h3 class="magazine__headline"><?php echo $headline ?></h3>
 <div class="magazine">
-	<div class="hard d-flex align-items-center justify-content-center" style="background-color:white;"><p><?php echo $heading ?></p></div>
+	<div class="hard d-flex align-items-center justify-content-center" style="background-image:url('<?php echo get_stylesheet_directory_uri();?>/assets/images/wood.jpg');"><p class="magazine__heading"><?php echo $heading ?></p></div>
 	<div class="hard"></div>
 
     <?php 
@@ -16,7 +16,7 @@
             $image = get_sub_field("image");
             $food = get_sub_field("food");
             ?>
-                    <div style="background:White" class="d-flex flex-column justify-content-center align-items-center">
+                    <div style="background-color:white" class="d-flex flex-column justify-content-center align-items-center">
                     <?php if($image) { ?> 
                         <img src="<?php echo $image ?>" class="magazine__image"/>
                     <?php } ?>

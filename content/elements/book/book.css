@@ -71,4 +71,17 @@
 .magazine__info {
   font-size: 12px;
 }
+
+.magazine__heading {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+@media screen and (min-width: 992px) {
+  .magazine__heading {
+    font-size: 30px;
+  }
+}
 /*# sourceMappingURL=book.css.map */

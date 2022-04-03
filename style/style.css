@@ -135,8 +135,8 @@ body {
 }
 
 .magazine {
-  height: 400px;
-  width: 250px;
+  height: 950px;
+  width: 300px;
   margin: 0 auto;
   opacity: 0;
   overflow: hidden;
@@ -148,6 +148,7 @@ body {
 
 @media screen and (min-width: 992px) {
   .magazine {
+    height: 750px;
     width: 1000px;
   }
 }
@@ -180,14 +181,14 @@ body {
 .magazine__food {
   font-weight: 900;
   font-family: 'Raleway', sans-serif;
-  margin-top: 50px;
+  margin-top: 0px;
   text-decoration: underline;
   font-size: 12px;
 }
 
 @media screen and (min-width: 992px) {
   .magazine__food {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
@@ -219,6 +220,10 @@ body {
   .magazine__heading {
     font-size: 30px;
   }
+}
+
+.magazine__date {
+  margin-top: 20px;
 }
 
 .contact {
@@ -258,6 +263,12 @@ body {
 
 .contact input {
   padding: 10px;
+}
+
+.contact__information {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .map {

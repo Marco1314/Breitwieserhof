@@ -4,34 +4,90 @@
 <div class="magazine">
 	<div class="hard d-flex align-items-center justify-content-center" style="background-image:url('<?php echo get_stylesheet_directory_uri();?>/assets/images/wood.jpg');"><p class="magazine__heading"><?php echo $heading ?></p></div>
 	<div class="hard"></div>
+    <div style="background-color:white" class="d-flex flex-column align-items-center">
+        <p class="magazine__information">Suppen</p>
+        <?php 
+        if( have_rows('suppen') ):
 
-    <?php 
-    if( have_rows('seiten') ):
+            // Loop through rows.
+            while( have_rows('suppen') ) : the_row();
+        
+                // Load sub field value.
+                $text = get_sub_field('text');
+                $food = get_sub_field("food");
+                $datum = get_sub_field("datum");
+                ?>
+                        <p class="magazine__date text-center"><?php echo $datum ?></p>
+                        <p class="magazine__food text-center"><?php echo $food ?></p>
+                        <p class="magazine__info text-center"><?php echo $text ?></p>
+                        
+                <?php
+            // End loop.
+            endwhile;
+        
+        // No value.
+        else :
+            // Do something...
+        endif;
+        ?>
+    </div>
 
-        // Loop through rows.
-        while( have_rows('seiten') ) : the_row();
-    
-            // Load sub field value.
-            $text = get_sub_field('text');
-            $image = get_sub_field("image");
-            $food = get_sub_field("food");
-            ?>
-                    <div style="background-color:white" class="d-flex flex-column justify-content-center align-items-center">
-                    <?php if($image) { ?> 
-                        <img src="<?php echo $image ?>" class="magazine__image"/>
-                    <?php } ?>
-                    <p class="magazine__food"><?php echo $food ?></p>
-                    <p class="magazine__info"><?php echo $text ?></p>
-                 </div>
-            <?php
-        // End loop.
-        endwhile;
-    
-    // No value.
-    else :
-        // Do something...
-    endif;
-    ?>
+    <div style="background-color:white" class="d-flex flex-column align-items-center">
+        <p class="magazine__information">Hauptspeisen</p>
+        <?php 
+        if( have_rows('hauptspeise') ):
+
+            // Loop through rows.
+            while( have_rows('hauptspeise') ) : the_row();
+        
+                // Load sub field value.
+                $text = get_sub_field('text');
+                $food = get_sub_field("food");
+                $datum = get_sub_field("datum");
+                ?>
+                        <p class="magazine__date text-center"><?php echo $datum ?></p>
+                        <p class="magazine__food text-center"><?php echo $food ?></p>
+                        <p class="magazine__info text-center"><?php echo $text ?></p>
+                        
+                <?php
+            // End loop.
+            endwhile;
+        
+        // No value.
+        else :
+            // Do something...
+        endif;
+        ?>
+    </div>
+
+    <div style="background-color:white" class="d-flex flex-column align-items-center">
+        <p class="magazine__information">Desserts</p>
+        <?php 
+        if( have_rows('dessert') ):
+
+            // Loop through rows.
+            while( have_rows('dessert') ) : the_row();
+        
+                // Load sub field value.
+                $text = get_sub_field('text');
+                $food = get_sub_field("food");
+                $datum = get_sub_field("datum");
+                ?>
+                        <p class="magazine__date text-center"><?php echo $datum ?></p>
+                        <p class="magazine__food text-center"><?php echo $food ?></p>
+                        <p class="magazine__info text-center"><?php echo $text ?></p>
+                        
+                <?php
+            // End loop.
+            endwhile;
+        
+        // No value.
+        else :
+            // Do something...
+        endif;
+        ?>
+    </div>
+
 </div>
 <div class="hard"></div>
 <div class="hard"></div>

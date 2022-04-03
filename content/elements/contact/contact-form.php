@@ -32,5 +32,12 @@
 
 
     </form>
+
+    <?php $txt = get_sub_field("informationstext"); ?>
+    <?php $telefon = get_sub_field("telefon"); ?>
+    <?php $ortstext = get_sub_field("ortstext"); ?>
+    <?php $ort = get_sub_field("ort"); ?>
+    <p class="contact__information"><?php echo $txt; ?>: <br/ ><?php echo $telefon ?></p>
+    <p class="contact__information"><?php echo $ortstext; ?><br /><?php echo $ort; ?></p>
 </div>
 <?php } ?>

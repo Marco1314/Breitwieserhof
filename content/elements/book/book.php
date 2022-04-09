@@ -1,7 +1,7 @@
 
 <?php function book($heading, $headline, $download) { ?> 
 <h3 class="magazine__headline"><?php echo $headline ?></h3>
-<div class="magazine">
+<div class="magazine" id="Speisekarte">
 	<div class="hard d-flex align-items-center justify-content-center" style="background-image:url('<?php echo get_stylesheet_directory_uri();?>/assets/images/wood.jpg');"><p class="magazine__heading"><?php echo $heading ?></p></div>
 	<div class="hard"></div>
     <div style="background-color:white" class="d-flex flex-column align-items-center">
@@ -33,12 +33,12 @@
     </div>
 
     <div style="background-color:white" class="d-flex flex-column align-items-center">
-        <p class="magazine__information">Hauptspeisen</p>
+        <p class="magazine__information">Tagesmenü</p>
         <?php 
-        if( have_rows('hauptspeise') ):
+        if( have_rows('tagesmenu') ):
 
             // Loop through rows.
-            while( have_rows('hauptspeise') ) : the_row();
+            while( have_rows('tagesmenu') ) : the_row();
         
                 // Load sub field value.
                 $text = get_sub_field('text');
@@ -59,6 +59,63 @@
         endif;
         ?>
     </div>
+
+    <div style="background-color:white" class="d-flex flex-column align-items-center">
+        <p class="magazine__information">Hauptspeisen Seite 1</p>
+        <?php 
+        if( have_rows('hauptspeisen1') ):
+
+            // Loop through rows.
+            while( have_rows('hauptspeisen1') ) : the_row();
+        
+                // Load sub field value.
+                $text = get_sub_field('text');
+                $food = get_sub_field("food");
+                $datum = get_sub_field("datum");
+                ?>
+                        <p class="magazine__date text-center"><?php echo $datum ?></p>
+                        <p class="magazine__food text-center"><?php echo $food ?></p>
+                        <p class="magazine__info text-center"><?php echo $text ?></p>
+                        
+                <?php
+            // End loop.
+            endwhile;
+        
+        // No value.
+        else :
+            // Do something...
+        endif;
+        ?>
+    </div>
+
+    <div style="background-color:white" class="d-flex flex-column align-items-center">
+        <p class="magazine__information">Hauptspeisen Seite 2</p>
+        <?php 
+        if( have_rows('hauptspeisen2') ):
+
+            // Loop through rows.
+            while( have_rows('hauptspeisen2') ) : the_row();
+        
+                // Load sub field value.
+                $text = get_sub_field('text');
+                $food = get_sub_field("food");
+                $datum = get_sub_field("datum");
+                ?>
+                        <p class="magazine__date text-center"><?php echo $datum ?></p>
+                        <p class="magazine__food text-center"><?php echo $food ?></p>
+                        <p class="magazine__info text-center"><?php echo $text ?></p>
+                        
+                <?php
+            // End loop.
+            endwhile;
+        
+        // No value.
+        else :
+            // Do something...
+        endif;
+        ?>
+    </div>
+
 
     <div style="background-color:white" class="d-flex flex-column align-items-center">
         <p class="magazine__information">Desserts</p>

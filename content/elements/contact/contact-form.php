@@ -1,6 +1,6 @@
 <?php function contact($headline) { ?>
 
-<div class="container">
+<div class="container" id="contact">
     <form action="<?php echo get_stylesheet_directory_uri(); ?>/content/elements/contact/contact.php" method="POST" class="contact">
 
     <h2 class="contact__headline"><?php echo $headline ?></h2>

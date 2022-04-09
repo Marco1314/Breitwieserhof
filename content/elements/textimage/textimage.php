@@ -1,6 +1,6 @@
 <?php
     function textimage($img, $txt, $headline, $type) { ?>
-    <div class="textimage">
+    <div class="textimage" id="contact">
 
         <div class="container">
             <div class="row">

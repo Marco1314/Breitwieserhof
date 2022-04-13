@@ -46,7 +46,7 @@
                 ?>
   
                   <?php if($link) { ?>
-                    <a class="navigation__button" href="<?php echo $link ?>" target="_blank"><?php echo $text ?></a>
+                    <a class="navigation__button" href="<?php echo $link ?>"><?php echo $text ?></a>
                   <?php } ?>
                 <?php
                 // Do something...

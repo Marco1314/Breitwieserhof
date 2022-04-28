@@ -27,7 +27,7 @@
     endif;
     ?>
     <label for="text"></label>
-    <textarea name="" id="text" rows="20" placeholder="Nachricht eingeben..."></textarea>
+    <textarea name="Nachricht" id="text" rows="20" placeholder="Nachricht eingeben..."></textarea>
     <input type="submit" value="senden">
 
 

@@ -7,7 +7,7 @@
     $message = $_POST["Nachricht"];
 
     $to = "guenter.edelsbrunner@liwest.at";
-    $body = "Nachname: ".$Nachname." "."Vorname: ".$Vorname." "."Betreff: ".$Betreff. " "."Email-Adresse vom Absender: ".$Email."Nachricht".$message;
+    $body = "Nachname: ".$Nachname." "."Vorname: ".$Vorname." "."Betreff: ".$Betreff. " "."Email-Adresse vom Absender: ".$Email."Nachricht ".$message;
 
     mail($to, $Betreff, $body);
 ?>
